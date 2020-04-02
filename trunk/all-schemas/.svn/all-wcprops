@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/9/trunk/all-schemas
+END
+logging.conf
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/all-schemas/logging.conf
+END
+worker_allschemas.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/9/trunk/all-schemas/worker_allschemas.py
+END
+client_allschemas.py
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/9/trunk/all-schemas/client_allschemas.py
+END
