@@ -33,3 +33,24 @@ sudo /opt/python-2.7/bin/python client_allschemas.py --user=admin --password=adm
 ------------------test - Returned/Affected = 1/1 ------------------ id name 1 opensource-db-tools
 
 ------------------tmp - Returned/Affected = 1/1 ------------------ id name 1 opensource-db-tools ```
+
+
+
+$ python worker_allschemas.py -g localhost:4730 -d
+Make sure the worker is running by executing the following command:
+
+ps aux | grep worker_allschemas.py
+Here is the output of worker_allschemas.py with -h option for help.
+
+  -h, --help            show this help message and exit
+  -g GEARMAN_SERVERS [GEARMAN_SERVERS ...], --gearman-servers GEARMAN_SERVERS [GEARMAN_SERVERS ...]
+                        Gearman servers list. Default: ['localhost:4730']
+  -d, --daemonize       Daemonizes this worker to run as a deamon in the
+                        background and perform tasks for clients. Default:
+                        False
+  --version             show program's version number and exit
+Now, you can run SQL statements on databases of your choice on a MySQL server. Here are a few examples:
+
+$ python client_allschemas.py --user=<db username> --password=<db user password> --host=<db host or IP address> \
+-e "SHOW tables" -i mysql information_schema
+Put the actual database username, password, and hostname/ip in the command above. The command will output a list of all tables in all databases except mysql and information_schema databases. The output on my machine looks something like below.
