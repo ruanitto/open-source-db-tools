@@ -1,5 +1,25 @@
 # open-source-db-tools
 
+#summary all-schemas: Tool to run multiple SQL queries on a MySQL database server
+
+= Introduction =
+all-schemas: Tool to run multiple SQL queries on a MySQL database server
+
+
+= Details =
+
+[http://www.geeksww.com/tutorials/database_management_systems/mysql/installation/allschemas_tool_to_run_multiple_sql_queries_on_a_mysql_database_server.php all-schemas: Tool to run multiple SQL queries on a MySQL database server]
+
+#summary opensource-db-tools - A set of open source tools for MySQL
+#labels mysql,opensource,opensource-db-tools,geeks,database,postgresql,python
+
+= Introduction =
+
+opensource-db-tools - A set of open source tools for MySQL
+
+= Details =
+[http://www.geeksww.com/tutorials/database_management_systems/mysql/tools/opensourcedbtools__a_set_of_open_source_tools_for_mysql.php opensource-db-tools - A set of open source tools for MySQL]
+
 Tools and Scripts to administer MySQL and other open source database systems
 
 opensource-db-tools is a set of open source command line scripts like maatkit that will help database developers and administrators perform day-to-day database tasks easily and efficiently. In order to simplify the process of writing these scripts I have used gearman job server to distribute jobs across multiple workers (aka multiprocessing).
