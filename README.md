@@ -1,10 +1,9 @@
 # open-source-db-tools
 
-#summary all-schemas: Tool to run multiple SQL queries on a MySQL database server
+# summary all-schemas: Tool to run multiple SQL queries on a MySQL database server
 
-= Introduction =
+* Introduction
 all-schemas: Tool to run multiple SQL queries on a MySQL database server
-
 
 = Details =
 

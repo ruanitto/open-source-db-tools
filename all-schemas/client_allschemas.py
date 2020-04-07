@@ -89,7 +89,7 @@ if __name__ == "__main__":
         exit(0)
     cursor = conn.cursor()
     logging.debug("Running SQL: %s" % sql)
-    cursor.execute("""SHOW DATABASES LIKE %s""", (cmd.include_dbs[0]))
+    cursor.execute(sql)
     rows = cursor.fetchall()
     dbs_worked_on = 0
     dbs_ignored = 0
