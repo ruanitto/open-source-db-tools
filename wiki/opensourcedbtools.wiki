@@ -1,9 +1,0 @@
-#summary opensource-db-tools - A set of open source tools for MySQL
-#labels mysql,opensource,opensource-db-tools,geeks,database,postgresql,python
-
-= Introduction =
-
-opensource-db-tools - A set of open source tools for MySQL
-
-= Details =
-[http://www.geeksww.com/tutorials/database_management_systems/mysql/tools/opensourcedbtools__a_set_of_open_source_tools_for_mysql.php opensource-db-tools - A set of open source tools for MySQL]
