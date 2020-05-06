@@ -89,7 +89,14 @@ Put the actual database username, password, and hostname/ip in the command above
 python 2.7
 pip
 
-run: `pip install -r requirements.txt`
+To install pip:
+run: 
+```bash 
+wget https://bootstrap.pypa.io/get-pip.py;
+python get-pip.py;
+```
+
+run: `python -m pip install -r requirements.txt`
 
 ```
 sudo apt-get install build-essential python-dev libapache2-mod-wsgi-py3 libmysqlclient-dev
