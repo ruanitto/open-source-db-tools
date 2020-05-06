@@ -32,7 +32,7 @@ To SELECT all rows from all tables named t in all databases (except mysql, infor
 `python2.7 client_allschemas.py --user=<db username> --password=<db user password> --host=<db host or IP address> -e "SELECT * FROM dahi" "SELECT * FROM t" -i mysql information_schema d1`
 
 Output:
-```
+```bash
 ------------------t5 - Returned/Affected = 1/1 ------------------ id 1
 
 ------------------test - Returned/Affected = 0/0 ------------------
@@ -47,9 +47,11 @@ The command below creates a new table test and inserts a new row in it in all da
 
 You can SELECT rows in the new table in all databases mysql, information_schema, and main.
 
-`sudo /opt/python-2.7/bin/python client_allschemas.py --user=admin --password=admin --host=127.0.0.1 -e "SELECT * FROM test" -i mysql information_schema main ``` ------------------Db1 - Returned/Affected = 1/1 ------------------ id name 1 opensource-db-tools`
+`sudo /opt/python-2.7/bin/python client_allschemas.py --user=admin --password=admin --host=127.0.0.1 -e "SELECT * FROM test" -i mysql information_schema main`
 
-```
+```bash
+------------------Db1 - Returned/Affected = 1/1 ------------------ id name 1 opensource-db-tools
+
 ------------------stage - Returned/Affected = 1/1 ------------------ id name 1 opensource-db-tools
 
 ------------------test - Returned/Affected = 1/1 ------------------ id name 1 opensource-db-tools
@@ -66,7 +68,7 @@ Make sure the worker is running by executing the following command:
 
 Here is the output of worker_allschemas.py with -h option for help.
 
-  ```
+```bash
 -h, --help            show this help message and exit
   -g GEARMAN_SERVERS [GEARMAN_SERVERS ...], --gearman-servers GEARMAN_SERVERS [GEARMAN_SERVERS ...]
                         Gearman servers list. Default: ['localhost:4730']
