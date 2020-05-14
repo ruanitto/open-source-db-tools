@@ -118,7 +118,7 @@ if __name__ == "__main__":
     if cmd.dry_run: exit(0)
     try:
         submitted_requests = gm_client.submit_multiple_jobs(list_of_jobs, background=False, wait_until_complete=False)
-        completed_requests = gm_client.wait_until_jobs_completed(submitted_requests, poll_timeout=5.0)
+        completed_requests = gm_client.wait_until_jobs_completed(submitted_requests, poll_timeout=500.0)
     except (gearman.errors, gearman.errors.ServerUnavailable):
         logging.error("Error connecting to Gearman server: " + str(sys.exc_info()[0]))        
         exit(0)
