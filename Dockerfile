@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y build-essential python-dev \
   build-essential \
   mysql-client && apt-get clean
 
-ADD ./start.sh /start.sh
+COPY ./start.sh /start.sh
 RUN chmod 755 /*.sh
 # RUN mkdir -p /etc/supervisor/conf.d
 # ADD ./supervisor-gearmand.conf /etc/supervisor/conf.d/gearmand.conf
