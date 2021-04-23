@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:jessie
 
 LABEL Author="Rafael Gomes <madrafael.gsilva@gmail.com>"
 
@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y build-essential python-dev \
   vim \
   make \
   build-essential \
-  mysql-client && apt-get clean
+  mysql-client-5.5 && apt-get clean
 
 COPY ./start.sh /start.sh
 RUN chmod 755 /*.sh
